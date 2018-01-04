@@ -30,7 +30,7 @@ public:
 		}
 	}
 
-	/** Returns if the word is in the trie. */
+	/** Returns true if the word is in the trie. */
 	bool search(std::string const &word)
 	{
 		Trie *current = this;
@@ -47,7 +47,7 @@ public:
 		return true;
 	}
 
-	/** Returns if there is any word in the trie that starts with the given prefix. */
+	/** Returns true if there is any word in the trie that starts with the given prefix. */
 	bool startsWith(std::string const &prefix) 
 	{
 		return search(prefix);
